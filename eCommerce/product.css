@@ -1,0 +1,268 @@
+* {
+    background-color: #F9F3EC;
+    /* margin: 0; */
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+/* nav css */
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    background: red;
+    transition: 0.5s;
+
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+/* footer css */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4 {
+    margin-bottom: 15px;
+    margin-top: 0px;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.footer p {
+    font-size: 35px;
+}
+
+.icons .fa {
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 65px;
+}
+
+/* products */
+.product-list {
+    background-color: #F9F3EC;
+    padding: 3em;
+    display: flex;
+    justify-content: center;
+    /* rgba(244, 231, 231, 0.741); */
+}
+
+.product-list .Card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 10px #c1c9cd;
+    text-align: center;
+    font-family: "Poppins";
+    /* max-width: 100%; */
+}
+
+.Card .title {
+    font-size: 35px;
+    font-weight: bold;
+    background: white;
+}
+
+.Card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.Card .text {
+    text-align: left;
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+    font-size: 20px;
+    background-color: white;
+    padding-top: inherit;
+}
+
+.Card p {
+    background-color: white;
+    font-size: 35px;
+}
+
+/* buy button */
+.buy {
+    background-color: white;
+    /* background-color: #F9F3EC; */
+    border: none;
+    padding: 1em;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: xx-large;
+
+
+}
+
+.buy:hover {
+    box-shadow: 0px 5px 5px #F9F3EC;
+    color: red;
+}
+
+/* container css */
+.product-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 60px;
+    grid-row-gap: 40px;
+    /* grid-gap: 20px; */
+    width: 80%;
+}
+
+.Card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.watches img {
+    width: 100%;
+    /* make all images the same width */
+    height: auto;
+    /* maintain aspect ratio */
+}
+
+@media (max-width: 800px) {
+
+    /* product container */
+    .product-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* product list */
+    .product-list {
+        padding: 1em;
+    }
+
+    /* Card */
+    .Card {
+        font-size: 20px;
+    }
+
+    /* title */
+    .Card .title {
+        font-size: 25px;
+    }
+
+    /* text */
+    .Card .text {
+        margin-left: 0.5em;
+        font-size: 16px;
+    }
+
+    /* price */
+    .Card p {
+        font-size: 25px;
+    }
+
+    /* buy button */
+    .buy {
+        font-size: large;
+    }
+
+    /* footer */
+    .footer h4 {
+        font-size: 25px;
+    }
+
+    .footer p {
+        font-size: 15px;
+    }
+
+    /* icons */
+    .icons .fa {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1080px) {
+
+    /* nav */
+    .nav-links ul li a {
+        font-size: 25px;
+    }
+
+    /* product container */
+    .product-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* product list */
+    .product-list {
+        padding: 1.5em;
+    }
+
+    /* Card */
+    .Card {
+        font-size: 25px;
+    }
+
+    /* title */
+    .Card .title {
+        font-size: 30px;
+    }
+
+    /* text */
+    .Card .text {
+        margin-left: 1em;
+        font-size: 20px;
+    }
+
+    /* price */
+    .Card p {
+        font-size: 30px;
+    }
+
+    /* buy button */
+    .buy {
+        font-size: x-large;
+    }
+
+    /* footer */
+    .footer h4 {
+        font-size: 35px;
+    }
+
+    .footer p {
+        font-size: 20px;
+    }
+
+    /* icons */
+    .icons .fa {
+        font-size: 40px;
+    }
+}
